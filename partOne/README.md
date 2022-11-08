@@ -8,5 +8,5 @@ python -m unittest
 
 #### If you want to run just a suit, you should type: 
 ```sh
-python -m unittest tests.test_sign_in_page.TestSignInPage
+python -m unittest tests.test_sign_in_page.TestWebPage
 ```
