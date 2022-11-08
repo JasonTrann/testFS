@@ -20,7 +20,8 @@ class TestSignInPage(BaseTest):
 
         # Question 3 & 4:
         statistics_page.is_statistics_page_displayed()
-        
+
+        # nEED TO BE CHECK
         statistics_page.total_fund()
         sleep(5)
 
