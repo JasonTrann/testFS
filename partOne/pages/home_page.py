@@ -27,21 +27,3 @@ class HomePage(BasePage):
         except TimeoutException:
             return False
 
-    def enter_to_field(self):
-        self.wait_element(*self.TO_FIELD)
-        self.find_element(*self.TO_FIELD).send_keys("buulong2410992@gmail.com")
-
-    def enter_subject_field(self):
-        self.wait_element(*self.SUBJECT_FIELD)
-        # self.find_element(*self.SUBJECT_FIELD).click()
-        self.find_element(*self.SUBJECT_FIELD).send_keys("test")
-
-    def enter_body_field(self):
-        self.find_element(*self.BODY_FIELD).send_keys("test")
-
-    def click_sent_button(self):
-        print("CLick Sent Button")
-        self.find_element(*self.SENT_BTN).click()
-
-
-# //div[@class='highcharts-point highcharts-color-0']

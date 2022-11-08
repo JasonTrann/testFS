@@ -34,22 +34,8 @@ class StatisticsPage(BasePage):
         except TimeoutException:
             return False
 
-    def hover_chac(self):
-        self.hover(*self.test1)
-        a = self.find_element(*self.test1).get_attribute("innerText")
-        print(a)
+    def total_fund(self):
+        total_text = self.find_element(By.XPATH, "//*[name()='text']//*[name()='tspan' and(contains(@style,'bold'))]").text
+        print(total_text)
 
-    def enter_email(self, email):
-        self.find_element(*self.EMAIL_FIELD).send_keys(email)
-
-    def click_next_btn(self):
-        self.wait_element(*self.NEXT_BTN)
-        self.find_element(*self.NEXT_BTN).click()
-
-    def enter_password(self, password):
-        self.wait_element(*self.PASSWORD)
-        self.find_element(*self.PASSWORD).send_keys(password)
-
-    def click_to_login_button(self):
-        self.find_element(*self.LOGIN_BTN).click()
 

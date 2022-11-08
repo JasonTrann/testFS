@@ -20,8 +20,7 @@ class TestSignInPage(BaseTest):
 
         # Question 3 & 4:
         statistics_page.is_statistics_page_displayed()
-        # sleep(5)
-
-        statistics_page.hover_chac()
+        
+        statistics_page.total_fund()
         sleep(5)
 
